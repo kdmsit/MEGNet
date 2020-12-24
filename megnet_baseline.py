@@ -12,7 +12,7 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=10
+epoch=5
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -61,8 +61,8 @@ print("Generate Testing Results......")
 final_test_list=[["True","Predicted","Absolute Error"]]
 ae_list=[]
 for i in idx_test:
-    new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     try:
+        new_structure = Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
         pred_target = model.predict_structure(new_structure)
         true_target = float(id_prop_data[i][index])
         ae = abs(float(pred_target[0])-true_target)
@@ -70,7 +70,8 @@ for i in idx_test:
         # print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
         final_test_list.append([pred_target, true_target, ae])
     except:
-        structures_invalid.append(new_structure)
+        # structures_invalid.append(new_structure)
+        continue
 print("MAE : "+str(np.mean(ae_list)))
 my_df = pd.DataFrame(final_test_list)
 my_df.to_csv('test_'+property+'.csv', index=False, header=False)
