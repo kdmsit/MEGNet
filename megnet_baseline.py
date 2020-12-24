@@ -37,7 +37,9 @@ with open(id_prop_file) as f:
 structures = []
 targets = []
 for i in idx_train:
-    structures.append(Structure.from_file(os.path.join(data_path,str(i)+'.cif')))
+    s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
+    graph = model.graph_converter.convert(s)
+    structures.append(graph)
     targets.append(id_prop_data[i][1])
 print(targets)
 model.train(structures, targets, epochs=1000)
