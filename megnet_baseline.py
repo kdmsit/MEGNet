@@ -12,7 +12,7 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=30
+epoch=1000
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
