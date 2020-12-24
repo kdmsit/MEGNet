@@ -52,7 +52,7 @@ for i in idx_train:
         targets_valid.append(p)
     except:
         structures_invalid.append(s)
-model.train_from_graphs(graphs_valid, targets_valid,epochs=30)
+model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 
 # Predict the property of a new structure
 # graphs_valid_test = []
@@ -70,4 +70,5 @@ model.train_from_graphs(graphs_valid, targets_valid,epochs=30)
 for i in idx_test:
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     pred_target = model.predict_structure(new_structure)
-    print(pred_target)
+    true_target = float(id_prop_data[i][1])
+    print(float(pred_target[0]),true_target)
