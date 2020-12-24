@@ -70,4 +70,4 @@ for i in idx_test:
     ae = abs(float(pred_target[0])-true_target)
     ae_list.append(ae)
     print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
-print("MAE : "+np.mean(ae_list))
+print("MAE : "+str(np.mean(ae_list)))
