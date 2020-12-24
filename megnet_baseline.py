@@ -7,6 +7,12 @@ from pymatgen.core.structure import Structure
 import os
 import csv
 from sklearn.model_selection import train_test_split
+import h5py
+
+f1 = h5py.File('mvl_models/mp-2018.6.1/band_gap_regression.hdf5','r+')
+
+
+
 
 
 nfeat_bond = 100
@@ -41,7 +47,7 @@ for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
     p=float(id_prop_data[i][1])
     try:
-        graph = model.graph_converter.convert(s)
+        graph = graph_converter.convert(s)
         graphs_valid.append(graph)
         targets_valid.append(p)
     except:
