@@ -34,15 +34,19 @@ with open(id_prop_file) as f:
     reader = csv.reader(f)
     id_prop_data = [row for row in reader]
 
-structures = []
-targets = []
+graphs_valid = []
+targets_valid = []
+structures_invalid = []
 for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-    graph = model.graph_converter.convert(s)
-    structures.append(graph)
-    targets.append(float(id_prop_data[i][1]))
-print(targets)
-model.train(structures, targets, epochs=1000)
+    p=float(id_prop_data[i][1])
+    try:
+        graph = model.graph_converter.convert(s)
+        graphs_valid.append(graph)
+        targets_valid.append(p)
+    except:
+        structures_invalid.append(s)
+model.train_from_graphs(graphs_valid, targets_valid)
 
 # Predict the property of a new structure
 for i in idx_test:
