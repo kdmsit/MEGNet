@@ -12,7 +12,7 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=5
+epoch=500
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -58,7 +58,7 @@ model.train_from_graphs(graphs_valid, targets_valid,epochs=epoch)
 
 print("Generate Testing Results......")
 
-final_test_list=[["True","Predicted","Absolute Error"]]
+final_test_list=[["Cif","True","Predicted","Absolute Error"]]
 ae_list=[]
 for i in idx_test:
     try:
@@ -68,7 +68,7 @@ for i in idx_test:
         ae = abs(float(pred_target[0])-true_target)
         ae_list.append(ae)
         # print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
-        final_test_list.append([pred_target, true_target, ae])
+        final_test_list.append([i,pred_target[0], true_target, ae])
     except:
         # structures_invalid.append(new_structure)
         continue
