@@ -48,6 +48,7 @@ for i in tqdm(idx_train):
         targets_valid.append(p)
     except:
         structures_invalid.append(s)
+print("Train Data Load Done")
 model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 
 # Predict the property of a new structure
