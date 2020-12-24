@@ -57,7 +57,8 @@ model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 # Predict the property of a new structure
 for i in idx_test:
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
-    graph = model.graph_converter.convert(new_structure)
-    pred_target = model.predict_structure(graph)
     true_target = float(id_prop_data[i][1])
+    graph = graph_converter.convert(new_structure)
+    pred_target = model.predict_structure(graph)
+
     print(pred_target,true_target)
