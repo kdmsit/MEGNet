@@ -1,4 +1,4 @@
-# from data import *
+from data import *
 # import megnet as mg
 from megnet.models import MEGNetModel
 from megnet.data.crystal import CrystalGraph
