@@ -42,7 +42,7 @@ print("Train Data Load Started......")
 graphs_valid = []
 targets_valid = []
 structures_invalid = []
-for i in tqdm(idx_train):
+for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
     p=float(id_prop_data[i][index])
     try:
@@ -60,7 +60,7 @@ print("Generate Testing Results......")
 
 final_test_list=[["True","Predicted","Absolute Error"]]
 ae_list=[]
-for i in tqdm(idx_test):
+for i in idx_test:
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     try:
         pred_target = model.predict_structure(new_structure)
