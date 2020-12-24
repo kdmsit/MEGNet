@@ -52,7 +52,7 @@ for i in idx_train:
         targets_valid.append(p)
     except:
         structures_invalid.append(s)
-model.train_from_graphs(graphs_valid, targets_valid)
+model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 
 # Predict the property of a new structure
 for i in idx_test:
