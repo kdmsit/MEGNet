@@ -37,13 +37,13 @@ with open(id_prop_file) as f:
 structures = []
 targets = []
 for i in idx_train:
-    structures.append(Structure.from_file(os.path.join(data_path,i+'.cif')))
+    structures.append(Structure.from_file(os.path.join(data_path,str(i)+'.cif')))
     targets.append(id_prop_data[i][1])
 model.train(structures, targets, epochs=1000)
 
 # Predict the property of a new structure
 for i in idx_test:
-    new_structure=Structure.from_file(os.path.join(data_path,i+'.cif'))
+    new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     pred_target = model.predict_structure(new_structure)
     true_target = id_prop_data[i][1]
     print(pred_target,true_target)
