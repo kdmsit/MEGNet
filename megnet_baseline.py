@@ -6,11 +6,13 @@ import numpy as np
 from pymatgen.core.structure import Structure
 import os
 import csv
+import pandas as pd
 from sklearn.model_selection import train_test_split
 import tqdm
 
 
 nfeat_bond = 100
+epoch=30
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -36,6 +38,7 @@ with open(id_prop_file) as f:
     reader = csv.reader(f)
     id_prop_data = [row for row in reader]
 
+print("Train Data Load Started......")
 graphs_valid = []
 targets_valid = []
 structures_invalid = []
@@ -48,27 +51,29 @@ for i in tqdm(idx_train):
         targets_valid.append(p)
     except:
         structures_invalid.append(s)
-print("Train Data Load Done")
-model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
+print("Train Data Load Done......")
 
-# Predict the property of a new structure
-# graphs_valid_test = []
-# true_target_test = []
-# for i in idx_test:
-#     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
-#     try:
-#         graph = graph_converter.convert(new_structure)
-#         graphs_valid_test.append(graph)
-#     except:
-#         structures_invalid.append(s)
-#     true_target_test.append(float(id_prop_data[i][1]))
-# pred_target = model.predict_structure(graphs_valid_test)
+print("Training the model......")
+model.train_from_graphs(graphs_valid, targets_valid,epochs=epoch)
+
+print("Generate Testing Results......")
+
+final_test_list=[["True","Predicted","Absolute Error"]]
 ae_list=[]
 for i in tqdm(idx_test):
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
-    pred_target = model.predict_structure(new_structure)
-    true_target = float(id_prop_data[i][index])
-    ae = abs(float(pred_target[0])-true_target)
-    ae_list.append(ae)
-    print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
+    try:
+        pred_target = model.predict_structure(new_structure)
+        true_target = float(id_prop_data[i][index])
+        ae = abs(float(pred_target[0])-true_target)
+        ae_list.append(ae)
+        # print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
+        final_test_list.append([pred_target, true_target, ae])
+    except:
+        structures_invalid.append(new_structure)
 print("MAE : "+str(np.mean(ae_list)))
+my_df = pd.DataFrame(final_test_list)
+my_df.to_csv('test_'+property+'.csv', index=False, header=False)
+
+
+
