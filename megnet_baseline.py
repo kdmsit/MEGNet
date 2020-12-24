@@ -40,13 +40,14 @@ for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
     graph = model.graph_converter.convert(s)
     structures.append(graph)
-    targets.append(id_prop_data[i][1])
+    targets.append(float(id_prop_data[i][1]))
 print(targets)
 model.train(structures, targets, epochs=1000)
 
 # Predict the property of a new structure
 for i in idx_test:
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
-    pred_target = model.predict_structure(new_structure)
-    true_target = id_prop_data[i][1]
+    graph = model.graph_converter.convert(new_structure)
+    pred_target = model.predict_structure(graph)
+    true_target = float(id_prop_data[i][1])
     print(pred_target,true_target)
