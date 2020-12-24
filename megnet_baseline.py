@@ -21,7 +21,7 @@ model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, w
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
-data_path = '../data_100/'
+data_path = 'data_100/'
 radius=8
 max_num_nbr = 12
 test_size=0.8
