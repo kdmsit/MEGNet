@@ -7,11 +7,6 @@ from pymatgen.core.structure import Structure
 import os
 import csv
 from sklearn.model_selection import train_test_split
-import h5py
-
-f1 = h5py.File('mvl_models/mp-2018.6.1/band_gap_regression.hdf5','r+')
-
-
 
 
 
@@ -20,14 +15,15 @@ r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
 graph_converter = CrystalGraph(cutoff=r_cutoff)
-# graph_converter = full_dataset(cutoff=r_cutoff)
 model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, width=gaussian_width)
-# model = MEGNetModel(centers=gaussian_centers, width=gaussian_width)
 
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
 data_path = 'data_100/'
+property='formation_energy'
+prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
+index=prop[property]
 radius=8
 max_num_nbr = 12
 test_size=0.8
@@ -45,7 +41,7 @@ targets_valid = []
 structures_invalid = []
 for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-    p=float(id_prop_data[i][1])
+    p=float(id_prop_data[i][index])
     try:
         graph = graph_converter.convert(s)
         graphs_valid.append(graph)
@@ -66,9 +62,11 @@ model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 #         structures_invalid.append(s)
 #     true_target_test.append(float(id_prop_data[i][1]))
 # pred_target = model.predict_structure(graphs_valid_test)
-
+ae_list=[]
 for i in idx_test:
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     pred_target = model.predict_structure(new_structure)
-    true_target = float(id_prop_data[i][1])
-    print(float(pred_target[0]),true_target)
+    true_target = float(id_prop_data[i][index])
+    ae = abs(float(pred_target[0])-true_target)
+    ae_list.append(ae)
+    print(str(pred_target)+" "+str(true_target)+" "+ str(ae))
