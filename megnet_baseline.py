@@ -7,7 +7,7 @@ from pymatgen.core.structure import Structure
 import os
 import csv
 from sklearn.model_selection import train_test_split
-
+import tqdm
 
 
 nfeat_bond = 100
@@ -39,7 +39,7 @@ with open(id_prop_file) as f:
 graphs_valid = []
 targets_valid = []
 structures_invalid = []
-for i in idx_train:
+for i in tqdm(idx_train):
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
     p=float(id_prop_data[i][index])
     try:
@@ -63,7 +63,7 @@ model.train_from_graphs(graphs_valid, targets_valid,epochs=200)
 #     true_target_test.append(float(id_prop_data[i][1]))
 # pred_target = model.predict_structure(graphs_valid_test)
 ae_list=[]
-for i in idx_test:
+for i in tqdm(idx_test):
     new_structure=Structure.from_file(os.path.join(data_path,str(i)+'.cif'))
     pred_target = model.predict_structure(new_structure)
     true_target = float(id_prop_data[i][index])
