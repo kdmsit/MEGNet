@@ -12,7 +12,7 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=1000
+epoch=500
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -23,7 +23,7 @@ model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, w
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
 data_path = 'data/'
-property='formation_energy'
+property='fermi_energy'
 prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
 radius=8
