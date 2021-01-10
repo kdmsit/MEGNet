@@ -23,7 +23,7 @@ model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, w
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
 data_path = 'data/'
-property='fermi_energy'
+property='total_magnetization'
 prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
 radius=8
