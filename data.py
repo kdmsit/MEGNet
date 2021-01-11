@@ -254,7 +254,8 @@ class CIFData(Dataset):
 		cif_id = str(int(float(data_row[0])))
 		x = data_row[1]
 		if x != 'None':
-			targets.append(float(x))
+			targets.append(np.log10(float(x)))
+			# targets.append(float(x))
 		else:
 			targets.append(float("inf"))
 

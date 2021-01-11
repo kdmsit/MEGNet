@@ -12,7 +12,7 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=500
+epoch=200
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -22,9 +22,13 @@ model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, w
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
-data_path = 'data/'
-property='formation_energy'
-prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
+data_path = 'data_elasticity/'
+
+property='bm'
+prop={'bm':1,'sm':2,'pr':3}
+
+# property='formation_energy'
+# prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
 radius=8
 max_num_nbr = 12
@@ -44,7 +48,8 @@ targets_valid = []
 structures_invalid = []
 for i in idx_train:
     s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-    p=float(id_prop_data[i][index])
+    # p=float(id_prop_data[i][index])
+    p = np.log10(float(id_prop_data[i][index]))
     try:
         graph = graph_converter.convert(s)
         graphs_valid.append(graph)
