@@ -12,12 +12,14 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=200
+epoch=00
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
 graph_converter = CrystalGraph(cutoff=r_cutoff)
 model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, width=gaussian_width)
+print(model)
+
 
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
