@@ -12,13 +12,13 @@ import tqdm
 
 
 nfeat_bond = 100
-epoch=00
+epoch=1000
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
 graph_converter = CrystalGraph(cutoff=r_cutoff)
 model = MEGNetModel(graph_converter=graph_converter, centers=gaussian_centers, width=gaussian_width)
-print(model)
+print(model.summary())
 
 
 # Model training
@@ -29,7 +29,7 @@ data_path = 'data/'
 # property='bm'
 # prop={'bm':1,'sm':2,'pr':3}
 
-property='total_magnetization'
+property='formation_energy'
 prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
 radius=8
@@ -80,8 +80,8 @@ for i in idx_test:
         # structures_invalid.append(new_structure)
         continue
 print("MAE : "+str(np.mean(ae_list)))
-my_df = pd.DataFrame(final_test_list)
-my_df.to_csv('test_'+property+'.csv', index=False, header=False)
+# my_df = pd.DataFrame(final_test_list)
+# my_df.to_csv('test_'+property+'.csv', index=False, header=False)
 
 
 
