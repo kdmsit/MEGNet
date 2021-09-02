@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_AgClO2
+data_PbAuO2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.50033100
-_cell_length_b   4.13612200
-_cell_length_c   10.26089663
-_cell_angle_alpha   80.15618351
+_cell_length_a   3.66959900
+_cell_length_b   6.58698900
+_cell_length_c   6.66071771
+_cell_angle_alpha   68.97563377
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   AgClO2
-_chemical_formula_sum   'Ag2 Cl2 O4'
-_cell_volume   146.36805690
+_chemical_formula_structural   PbAuO2
+_chemical_formula_sum   'Pb2 Au2 O4'
+_cell_volume   150.28213996
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,11 +24,11 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ag  Ag0  1  0.75000000  0.18873700  0.13872300  1
-  Ag  Ag1  1  0.25000000  0.81126300  0.86127700  1
-  Cl  Cl2  1  0.25000000  0.68593100  0.14540700  1
-  Cl  Cl3  1  0.75000000  0.31406900  0.85459300  1
-  O  O4  1  0.75000000  0.07534300  0.41069400  1
-  O  O5  1  0.75000000  0.79538200  0.47656900  1
-  O  O6  1  0.25000000  0.20461800  0.52343100  1
-  O  O7  1  0.25000000  0.92465700  0.58930600  1
+  Pb  Pb0  1  0.00000000  0.00000000  0.50000000  1
+  Pb  Pb1  1  0.50000000  0.50000000  0.50000000  1
+  Au  Au2  1  0.00000000  0.50000000  0.00000000  1
+  Au  Au3  1  0.50000000  0.00000000  0.00000000  1
+  O  O4  1  0.50000000  0.13895200  0.67448800  1
+  O  O5  1  0.00000000  0.41527000  0.32500300  1
+  O  O6  1  0.50000000  0.86104800  0.32551200  1
+  O  O7  1  0.00000000  0.58473000  0.67499700  1

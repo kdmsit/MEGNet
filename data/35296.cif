@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_Ni3S
+data_Ni3Au
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.40952764
-_cell_length_b   4.40952764
-_cell_length_c   4.40952764
-_cell_angle_alpha   133.43193802
-_cell_angle_beta   133.43193802
-_cell_angle_gamma   67.97662489
+_cell_length_a   4.55435169
+_cell_length_b   4.55435169
+_cell_length_c   4.55435169
+_cell_angle_alpha   132.42802603
+_cell_angle_beta   132.42802603
+_cell_angle_gamma   69.55384062
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Ni3S
-_chemical_formula_sum   'Ni3 S1'
-_cell_volume   44.43249728
+_chemical_formula_structural   Ni3Au
+_chemical_formula_sum   'Ni3 Au1'
+_cell_volume   50.48775577
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -27,4 +27,4 @@ loop_
   Ni  Ni0  1  0.75000000  0.25000000  0.50000000  1
   Ni  Ni1  1  0.25000000  0.75000000  0.50000000  1
   Ni  Ni2  1  0.50000000  0.50000000  0.00000000  1
-  S  S3  1  0.00000000  0.00000000  0.00000000  1
+  Au  Au3  1  0.00000000  0.00000000  0.00000000  1

@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_La2SmS4
+data_NdCuSe2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.50227046
-_cell_length_b   7.50227046
-_cell_length_c   7.50227046
-_cell_angle_alpha   109.41802527
-_cell_angle_beta   109.41802527
-_cell_angle_gamma   109.57766382
+_cell_length_a   7.50932500
+_cell_length_b   6.74499600
+_cell_length_c   7.21991550
+_cell_angle_alpha   83.46770406
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   La2SmS4
-_chemical_formula_sum   'La4 Sm2 S8'
-_cell_volume   325.05371531
-_cell_formula_units_Z   2
+_chemical_formula_structural   NdCuSe2
+_chemical_formula_sum   'Nd4 Cu4 Se8'
+_cell_volume   363.31726109
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,17 +24,19 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  La  La0  1  0.99483100  0.37500000  0.11983100  1
-  La  La1  1  0.25516900  0.87500000  0.88016900  1
-  La  La2  1  0.62500000  0.74483100  0.61983100  1
-  La  La3  1  0.12500000  0.00516900  0.38016900  1
-  Sm  Sm4  1  0.75000000  0.25000000  0.50000000  1
-  Sm  Sm5  1  0.50000000  0.50000000  0.00000000  1
-  S  S6  1  0.52455900  0.12988600  0.74960600  1
-  S  S7  1  0.02495300  0.13028000  0.75039400  1
-  S  S8  1  0.87011400  0.61972000  0.39467200  1
-  S  S9  1  0.37988600  0.27455900  0.24960600  1
-  S  S10  1  0.22504700  0.47544100  0.60532800  1
-  S  S11  1  0.38028000  0.77495300  0.25039400  1
-  S  S12  1  0.86972000  0.62011400  0.89467200  1
-  S  S13  1  0.72544100  0.97504700  0.10532800  1
+  Nd  Nd0  1  0.54528800  0.30660500  0.29942100  1
+  Nd  Nd1  1  0.04528800  0.69339500  0.20057900  1
+  Nd  Nd2  1  0.45471200  0.69339500  0.70057900  1
+  Nd  Nd3  1  0.95471200  0.30660500  0.79942100  1
+  Cu  Cu4  1  0.83955700  0.93106600  0.54608100  1
+  Cu  Cu5  1  0.16044300  0.06893400  0.45391900  1
+  Cu  Cu6  1  0.66044300  0.93106600  0.04608100  1
+  Cu  Cu7  1  0.33955700  0.06893400  0.95391900  1
+  Se  Se8  1  0.72351000  0.58140800  0.00239200  1
+  Se  Se9  1  0.77649000  0.58140800  0.50239200  1
+  Se  Se10  1  0.22351000  0.41859200  0.49760800  1
+  Se  Se11  1  0.27649000  0.41859200  0.99760800  1
+  Se  Se12  1  0.61195400  0.09778000  0.72092000  1
+  Se  Se13  1  0.11195400  0.90222000  0.77908000  1
+  Se  Se14  1  0.38804600  0.90222000  0.27908000  1
+  Se  Se15  1  0.88804600  0.09778000  0.22092000  1

@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_CeAlSi2
+data_K3SeO4F
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.14447420
-_cell_length_b   4.14447420
-_cell_length_c   10.91442000
-_cell_angle_alpha   90.00000000
-_cell_angle_beta   90.00000000
-_cell_angle_gamma   120.00000319
+_cell_length_a   7.86593778
+_cell_length_b   7.86593778
+_cell_length_c   7.86593778
+_cell_angle_alpha   123.24292962
+_cell_angle_beta   123.24292962
+_cell_angle_gamma   84.46924447
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   CeAlSi2
-_chemical_formula_sum   'Ce2 Al2 Si4'
-_cell_volume   162.35667946
+_chemical_formula_structural   K3SeO4F
+_chemical_formula_sum   'K6 Se2 O8 F2'
+_cell_volume   325.61386917
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,11 +24,21 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ce  Ce0  1  0.00000000  0.00000000  0.82112400  1
-  Ce  Ce1  1  0.00000000  0.00000000  0.17887600  1
-  Al  Al2  1  0.66666700  0.33333300  0.41414000  1
-  Al  Al3  1  0.33333300  0.66666700  0.58586000  1
-  Si  Si4  1  0.33333300  0.66666700  0.99693800  1
-  Si  Si5  1  0.66666700  0.33333300  0.00306200  1
-  Si  Si6  1  0.33333300  0.66666700  0.35088900  1
-  Si  Si7  1  0.66666700  0.33333300  0.64911100  1
+  K  K0  1  0.75000000  0.75000000  0.00000000  1
+  K  K1  1  0.25000000  0.25000000  0.00000000  1
+  K  K2  1  0.80940700  0.30940700  0.11881400  1
+  K  K3  1  0.30940700  0.19059300  0.50000000  1
+  K  K4  1  0.69059300  0.80940700  0.50000000  1
+  K  K5  1  0.19059300  0.69059300  0.88118600  1
+  Se  Se6  1  0.25000000  0.75000000  0.50000000  1
+  Se  Se7  1  0.75000000  0.25000000  0.50000000  1
+  O  O8  1  0.53705600  0.03705600  0.24495700  1
+  O  O9  1  0.20790100  0.70790100  0.24495700  1
+  O  O10  1  0.46294400  0.96294400  0.75504300  1
+  O  O11  1  0.96294400  0.20790100  0.50000000  1
+  O  O12  1  0.70790100  0.46294400  0.50000000  1
+  O  O13  1  0.03705600  0.79209900  0.50000000  1
+  O  O14  1  0.29209900  0.53705600  0.50000000  1
+  O  O15  1  0.79209900  0.29209900  0.75504300  1
+  F  F16  1  0.50000000  0.50000000  0.00000000  1
+  F  F17  1  0.00000000  0.00000000  0.00000000  1

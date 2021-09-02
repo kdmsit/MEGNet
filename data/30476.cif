@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Na7NbO6
+data_Li2FeF4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.43699652
-_cell_length_b   6.43699652
-_cell_length_c   6.43699698
-_cell_angle_alpha   60.43324748
-_cell_angle_beta   60.43324748
-_cell_angle_gamma   60.43325472
+_cell_length_a   5.21312555
+_cell_length_b   5.21312555
+_cell_length_c   6.56963700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   112.99822853
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Na7NbO6
-_chemical_formula_sum   'Na7 Nb1 O6'
-_cell_volume   190.44446538
-_cell_formula_units_Z   1
+_chemical_formula_structural   Li2FeF4
+_chemical_formula_sum   'Li4 Fe2 F8'
+_cell_volume   164.34993010
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,17 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Na  Na0  1  0.88119400  0.29010300  0.49984000  1
-  Na  Na1  1  0.04672700  0.75250400  0.51388900  1
-  Na  Na2  1  0.75250400  0.51388900  0.04672700  1
-  Na  Na3  1  0.51388900  0.04672700  0.75250400  1
-  Na  Na4  1  0.34287900  0.34287900  0.34287900  1
-  Na  Na5  1  0.49984000  0.88119400  0.29010300  1
-  Na  Na6  1  0.29010300  0.49984000  0.88119400  1
-  Nb  Nb7  1  0.99655700  0.99655700  0.99655700  1
-  O  O8  1  0.78421500  0.10894300  0.32112000  1
-  O  O9  1  0.18239100  0.92714000  0.66123900  1
-  O  O10  1  0.92714000  0.66123900  0.18239100  1
-  O  O11  1  0.66123900  0.18239100  0.92714000  1
-  O  O12  1  0.32112000  0.78421500  0.10894300  1
-  O  O13  1  0.10894300  0.32112000  0.78421400  1
+  Li  Li0  1  0.84527900  0.15472100  0.25000000  1
+  Li  Li1  1  0.50000000  0.50000000  0.00000000  1
+  Li  Li2  1  0.50000000  0.50000000  0.50000000  1
+  Li  Li3  1  0.15472100  0.84527900  0.75000000  1
+  Fe  Fe4  1  0.83001200  0.16998800  0.75000000  1
+  Fe  Fe5  1  0.16998800  0.83001200  0.25000000  1
+  F  F6  1  0.24889100  0.23827700  0.75000000  1
+  F  F7  1  0.23827700  0.24889100  0.25000000  1
+  F  F8  1  0.72914500  0.27085500  0.01326900  1
+  F  F9  1  0.72914500  0.27085500  0.48673100  1
+  F  F10  1  0.27085500  0.72914500  0.98673100  1
+  F  F11  1  0.27085500  0.72914500  0.51326900  1
+  F  F12  1  0.76172300  0.75110900  0.75000000  1
+  F  F13  1  0.75110900  0.76172300  0.25000000  1

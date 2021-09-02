@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_Li3UO4
+data_Tb(NiP)2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.29996698
-_cell_length_b   5.29996698
-_cell_length_c   5.29996698
-_cell_angle_alpha   129.84239819
-_cell_angle_beta   129.84239819
-_cell_angle_gamma   73.65884296
+_cell_length_a   5.44158027
+_cell_length_b   5.44158027
+_cell_length_c   5.44158027
+_cell_angle_alpha   138.22741969
+_cell_angle_beta   138.22741969
+_cell_angle_gamma   60.55487278
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Li3UO4
-_chemical_formula_sum   'Li3 U1 O4'
-_cell_volume   85.63536688
+_chemical_formula_structural   Tb(NiP)2
+_chemical_formula_sum   'Tb1 Ni2 P2'
+_cell_volume   70.74554371
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,11 +24,8 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Li  Li0  1  0.25000000  0.75000000  0.50000000  1
-  Li  Li1  1  0.75000000  0.25000000  0.50000000  1
-  Li  Li2  1  0.50000000  0.50000000  0.00000000  1
-  U  U3  1  0.00000000  0.00000000  0.00000000  1
-  O  O4  1  0.23765500  0.23765500  0.00000000  1
-  O  O5  1  0.76234500  0.76234500  0.00000000  1
-  O  O6  1  0.00000000  0.50000000  0.50000000  1
-  O  O7  1  0.50000000  0.00000000  0.50000000  1
+  Tb  Tb0  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni1  1  0.25000000  0.75000000  0.50000000  1
+  Ni  Ni2  1  0.75000000  0.25000000  0.50000000  1
+  P  P3  1  0.62333200  0.62333200  0.00000000  1
+  P  P4  1  0.37666800  0.37666800  0.00000000  1

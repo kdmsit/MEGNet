@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_Cd(CN)2
+data_PrAlO3
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.48292900
-_cell_length_b   6.48292900
-_cell_length_c   6.43030300
-_cell_angle_alpha   90.00000000
-_cell_angle_beta   90.00000000
-_cell_angle_gamma   90.00000000
+_cell_length_a   5.35772312
+_cell_length_b   5.35772312
+_cell_length_c   5.35772249
+_cell_angle_alpha   60.48396166
+_cell_angle_beta   60.48396166
+_cell_angle_gamma   60.48396928
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Cd(CN)2
-_chemical_formula_sum   'Cd2 C4 N4'
-_cell_volume   270.25514353
+_chemical_formula_structural   PrAlO3
+_chemical_formula_sum   'Pr2 Al2 O6'
+_cell_volume   109.93869165
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,13 +24,13 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Cd  Cd0  1  0.00000000  0.00000000  0.26283900  1
-  Cd  Cd1  1  0.50000000  0.50000000  0.76283900  1
-  C  C2  1  0.20374800  0.79625200  0.44473300  1
-  C  C3  1  0.79625200  0.20374800  0.44473300  1
-  C  C4  1  0.70374800  0.70374800  0.94473300  1
-  C  C5  1  0.29625200  0.29625200  0.94473300  1
-  N  N6  1  0.80801000  0.80801000  0.04884700  1
-  N  N7  1  0.19199000  0.19199000  0.04884700  1
-  N  N8  1  0.69199000  0.30801000  0.54884700  1
-  N  N9  1  0.30801000  0.69199000  0.54884700  1
+  Pr  Pr0  1  0.75000000  0.75000000  0.75000000  1
+  Pr  Pr1  1  0.25000000  0.25000000  0.25000000  1
+  Al  Al2  1  0.50000000  0.50000000  0.50000000  1
+  Al  Al3  1  0.00000000  0.00000000  0.00000000  1
+  O  O4  1  0.75000000  0.29772600  0.20227400  1
+  O  O5  1  0.20227400  0.75000000  0.29772600  1
+  O  O6  1  0.29772600  0.20227400  0.75000000  1
+  O  O7  1  0.25000000  0.70227400  0.79772600  1
+  O  O8  1  0.70227400  0.79772600  0.25000000  1
+  O  O9  1  0.79772600  0.25000000  0.70227400  1

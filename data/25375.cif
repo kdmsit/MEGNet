@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Bi2TeO2
+data_SrSm2O4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.03157006
-_cell_length_b   7.04584888
-_cell_length_c   4.01631091
-_cell_angle_alpha   73.16677934
-_cell_angle_beta   90.01466611
-_cell_angle_gamma   106.20259365
+_cell_length_a   6.02552848
+_cell_length_b   6.02552848
+_cell_length_c   11.39719600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   146.52452316
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Bi2TeO2
-_chemical_formula_sum   'Bi2 Te1 O2'
-_cell_volume   104.45756543
-_cell_formula_units_Z   1
+_chemical_formula_structural   SrSm2O4
+_chemical_formula_sum   'Sr2 Sm4 O8'
+_cell_volume   228.24266669
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,8 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Bi  Bi0  1  0.65590624  0.30937629  0.34885897  1
-  Bi  Bi1  1  0.34052606  0.69522826  0.65586266  1
-  Te  Te2  1  0.00828754  0.00112229  0.99532513  1
-  O  O3  1  0.25137405  0.50230296  0.24865613  1
-  O  O4  1  0.75129610  0.50102020  0.75008411  1
+  Sr  Sr0  1  0.88811200  0.11188800  0.25000000  1
+  Sr  Sr1  1  0.11188800  0.88811200  0.75000000  1
+  Sm  Sm2  1  0.63269000  0.36731000  0.42630800  1
+  Sm  Sm3  1  0.63269000  0.36731000  0.07369200  1
+  Sm  Sm4  1  0.36731000  0.63269000  0.57369200  1
+  Sm  Sm5  1  0.36731000  0.63269000  0.92630800  1
+  O  O6  1  0.00000000  0.00000000  0.00000000  1
+  O  O7  1  0.00000000  0.00000000  0.50000000  1
+  O  O8  1  0.53841800  0.46158200  0.25000000  1
+  O  O9  1  0.73591100  0.26408900  0.61054500  1
+  O  O10  1  0.73591100  0.26408900  0.88945500  1
+  O  O11  1  0.46158200  0.53841800  0.75000000  1
+  O  O12  1  0.26408900  0.73591100  0.38945500  1
+  O  O13  1  0.26408900  0.73591100  0.11054500  1

@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_AgRuO4
+data_CdSeO4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.03978167
-_cell_length_b   7.03978167
-_cell_length_c   7.03978167
-_cell_angle_alpha   135.93969949
-_cell_angle_beta   135.93969949
-_cell_angle_gamma   64.07357452
+_cell_length_a   5.21643267
+_cell_length_b   5.21643267
+_cell_length_c   7.30807200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   113.39244518
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   AgRuO4
-_chemical_formula_sum   'Ag2 Ru2 O8'
-_cell_volume   166.44277436
+_chemical_formula_structural   CdSeO4
+_chemical_formula_sum   'Cd2 Se2 O8'
+_cell_volume   182.51618721
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,15 +24,15 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ag  Ag0  1  0.50000000  0.50000000  0.00000000  1
-  Ag  Ag1  1  0.25000000  0.75000000  0.50000000  1
-  Ru  Ru2  1  0.00000000  0.00000000  0.00000000  1
-  Ru  Ru3  1  0.75000000  0.25000000  0.50000000  1
-  O  O4  1  0.68066200  0.06811900  0.91014600  1
-  O  O5  1  0.59202700  0.47948400  0.41014600  1
-  O  O6  1  0.52051600  0.93066200  0.11254300  1
-  O  O7  1  0.93188100  0.84202700  0.61254300  1
-  O  O8  1  0.22948400  0.31933800  0.38745700  1
-  O  O9  1  0.81811900  0.40797300  0.88745700  1
-  O  O10  1  0.06933800  0.18188100  0.58985400  1
-  O  O11  1  0.15797300  0.77051600  0.08985400  1
+  Cd  Cd0  1  0.00000000  0.00000000  0.00000000  1
+  Cd  Cd1  1  0.00000000  0.00000000  0.50000000  1
+  Se  Se2  1  0.64492700  0.35507300  0.25000000  1
+  Se  Se3  1  0.35507300  0.64492700  0.75000000  1
+  O  O4  1  0.28983200  0.23130600  0.25000000  1
+  O  O5  1  0.23130600  0.28983200  0.75000000  1
+  O  O6  1  0.74399600  0.25600400  0.05612100  1
+  O  O7  1  0.74399600  0.25600400  0.44387900  1
+  O  O8  1  0.25600400  0.74399600  0.55612100  1
+  O  O9  1  0.25600400  0.74399600  0.94387900  1
+  O  O10  1  0.76869400  0.71016800  0.25000000  1
+  O  O11  1  0.71016800  0.76869400  0.75000000  1

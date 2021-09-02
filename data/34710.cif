@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Ho
+data_Ho3Pb
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.54024826
-_cell_length_b   3.54024826
-_cell_length_c   11.42698800
-_cell_angle_alpha   90.00000000
-_cell_angle_beta   90.00000000
-_cell_angle_gamma   120.00000480
+_cell_length_a   6.20970374
+_cell_length_b   6.20970374
+_cell_length_c   6.20970374
+_cell_angle_alpha   135.59918972
+_cell_angle_beta   135.59918972
+_cell_angle_gamma   64.60060659
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Ho
-_chemical_formula_sum   Ho4
-_cell_volume   124.03087776
-_cell_formula_units_Z   4
+_chemical_formula_structural   Ho3Pb
+_chemical_formula_sum   'Ho3 Pb1'
+_cell_volume   115.58331951
+_cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,7 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ho  Ho0  1  0.00000000  0.00000000  0.00000000  1
-  Ho  Ho1  1  0.33333300  0.66666700  0.25000000  1
-  Ho  Ho2  1  0.00000000  0.00000000  0.50000000  1
-  Ho  Ho3  1  0.66666700  0.33333300  0.75000000  1
+  Ho  Ho0  1  0.75000000  0.25000000  0.50000000  1
+  Ho  Ho1  1  0.25000000  0.75000000  0.50000000  1
+  Ho  Ho2  1  0.50000000  0.50000000  0.00000000  1
+  Pb  Pb3  1  0.00000000  0.00000000  0.00000000  1

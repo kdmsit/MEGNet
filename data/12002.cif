@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_Li7NbO6
+data_CrB2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.89449917
-_cell_length_b   5.89449917
-_cell_length_c   5.89449955
-_cell_angle_alpha   56.83541139
-_cell_angle_beta   56.83541139
-_cell_angle_gamma   56.83541841
+_cell_length_a   2.95928836
+_cell_length_b   2.95928836
+_cell_length_c   3.03187100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000803
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Li7NbO6
-_chemical_formula_sum   'Li7 Nb1 O6'
-_cell_volume   134.24335401
+_chemical_formula_structural   CrB2
+_chemical_formula_sum   'Cr1 B2'
+_cell_volume   22.99407201
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,17 +24,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Li  Li0  1  0.12374700  0.49343000  0.72553200  1
-  Li  Li1  1  0.48927600  0.23560100  0.93148300  1
-  Li  Li2  1  0.23560100  0.93148300  0.48927600  1
-  Li  Li3  1  0.65462600  0.65462600  0.65462600  1
-  Li  Li4  1  0.72553200  0.12374700  0.49343000  1
-  Li  Li5  1  0.49343000  0.72553200  0.12374700  1
-  Li  Li6  1  0.93148300  0.48927600  0.23560100  1
-  Nb  Nb7  1  0.00021200  0.00021200  0.00021200  1
-  O  O8  1  0.23079700  0.63933700  0.88424300  1
-  O  O9  1  0.37571900  0.07159800  0.79531700  1
-  O  O10  1  0.07159800  0.79531700  0.37571900  1
-  O  O11  1  0.88424300  0.23079700  0.63933700  1
-  O  O12  1  0.63933700  0.88424300  0.23079700  1
-  O  O13  1  0.79531700  0.37571900  0.07159800  1
+  Cr  Cr0  1  0.00000000  0.00000000  0.00000000  1
+  B  B1  1  0.33333300  0.66666700  0.50000000  1
+  B  B2  1  0.66666700  0.33333300  0.50000000  1

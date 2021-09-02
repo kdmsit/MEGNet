@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_LuOs2
+data_Cs2HgI4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.27152339
-_cell_length_b   5.27152339
-_cell_length_c   8.78940400
-_cell_angle_alpha   90.00000000
+_cell_length_a   8.65715700
+_cell_length_b   8.12100500
+_cell_length_c   11.39409427
+_cell_angle_alpha   68.46822563
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   119.99999238
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   LuOs2
-_chemical_formula_sum   'Lu4 Os8'
-_cell_volume   211.52532367
-_cell_formula_units_Z   4
+_chemical_formula_structural   Cs2HgI4
+_chemical_formula_sum   'Cs4 Hg2 I8'
+_cell_volume   745.15708133
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,15 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Lu  Lu0  1  0.33333300  0.66666700  0.43417800  1
-  Lu  Lu1  1  0.66666700  0.33333300  0.56582200  1
-  Lu  Lu2  1  0.66666700  0.33333300  0.93417800  1
-  Lu  Lu3  1  0.33333300  0.66666700  0.06582200  1
-  Os  Os4  1  0.17246200  0.34492500  0.75000000  1
-  Os  Os5  1  0.17246200  0.82753800  0.75000000  1
-  Os  Os6  1  0.34492500  0.17246200  0.25000000  1
-  Os  Os7  1  0.82753800  0.65507500  0.25000000  1
-  Os  Os8  1  0.65507500  0.82753800  0.75000000  1
-  Os  Os9  1  0.00000000  0.00000000  0.00000000  1
-  Os  Os10  1  0.82753800  0.17246200  0.25000000  1
-  Os  Os11  1  0.00000000  0.00000000  0.50000000  1
+  Cs  Cs0  1  0.74445400  0.78594100  0.90733600  1
+  Cs  Cs1  1  0.23855400  0.66080700  0.53368800  1
+  Cs  Cs2  1  0.24445400  0.21405900  0.09266400  1
+  Cs  Cs3  1  0.73855400  0.33919300  0.46631200  1
+  Hg  Hg4  1  0.73972600  0.90715900  0.27328200  1
+  Hg  Hg5  1  0.23972600  0.09284100  0.72671800  1
+  I  I6  1  0.50566600  0.24960000  0.78982500  1
+  I  I7  1  0.74375000  0.27911400  0.14599600  1
+  I  I8  1  0.24861400  0.18739000  0.45580100  1
+  I  I9  1  0.97723500  0.25896100  0.78339400  1
+  I  I10  1  0.24375000  0.72088600  0.85400400  1
+  I  I11  1  0.00566600  0.75040000  0.21017500  1
+  I  I12  1  0.74861400  0.81261000  0.54419900  1
+  I  I13  1  0.47723500  0.74103900  0.21660600  1

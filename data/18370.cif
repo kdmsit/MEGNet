@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_AuBr
+data_Sm2(PPt2)3
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.03073818
-_cell_length_b   7.03073818
-_cell_length_c   7.03073818
-_cell_angle_alpha   115.63331064
-_cell_angle_beta   115.63331064
-_cell_angle_gamma   97.74590047
+_cell_length_a   23.23018675
+_cell_length_b   23.23018675
+_cell_length_c   23.23018675
+_cell_angle_alpha   169.80560677
+_cell_angle_beta   169.80560677
+_cell_angle_gamma   14.43619515
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   AuBr
-_chemical_formula_sum   'Au4 Br4'
-_cell_volume   259.39567497
-_cell_formula_units_Z   4
+_chemical_formula_structural   Sm2(PPt2)3
+_chemical_formula_sum   'Sm4 P6 Pt12'
+_cell_volume   392.67577296
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,11 +24,25 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Au  Au0  1  0.37500000  0.12500000  0.75000000  1
-  Au  Au1  1  0.37500000  0.62500000  0.75000000  1
-  Au  Au2  1  0.87500000  0.62500000  0.25000000  1
-  Au  Au3  1  0.37500000  0.62500000  0.25000000  1
-  Br  Br4  1  0.95399000  0.45399000  0.50000000  1
-  Br  Br5  1  0.20399000  0.20399000  0.00000000  1
-  Br  Br6  1  0.79601000  0.79601000  0.00000000  1
-  Br  Br7  1  0.54601000  0.04601000  0.50000000  1
+  Sm  Sm0  1  0.04940700  0.54940700  0.50000000  1
+  Sm  Sm1  1  0.29940700  0.29940700  0.00000000  1
+  Sm  Sm2  1  0.45059300  0.95059300  0.50000000  1
+  Sm  Sm3  1  0.70059300  0.70059300  0.00000000  1
+  P  P4  1  0.82512300  0.82512300  0.00000000  1
+  P  P5  1  0.75000000  0.25000000  0.50000000  1
+  P  P6  1  0.57512300  0.07512300  0.50000000  1
+  P  P7  1  0.92487700  0.42487700  0.50000000  1
+  P  P8  1  0.00000000  0.00000000  0.00000000  1
+  P  P9  1  0.17487700  0.17487700  0.00000000  1
+  Pt  Pt10  1  0.89772200  0.89772200  0.00000000  1
+  Pt  Pt11  1  0.39970200  0.39970200  0.00000000  1
+  Pt  Pt12  1  0.64772200  0.14772200  0.50000000  1
+  Pt  Pt13  1  0.10227800  0.10227800  0.00000000  1
+  Pt  Pt14  1  0.14970200  0.64970200  0.50000000  1
+  Pt  Pt15  1  0.77419800  0.77419800  0.00000000  1
+  Pt  Pt16  1  0.22580200  0.22580200  0.00000000  1
+  Pt  Pt17  1  0.85227800  0.35227800  0.50000000  1
+  Pt  Pt18  1  0.97580200  0.47580200  0.50000000  1
+  Pt  Pt19  1  0.60029800  0.60029800  0.00000000  1
+  Pt  Pt20  1  0.35029800  0.85029800  0.50000000  1
+  Pt  Pt21  1  0.52419800  0.02419800  0.50000000  1

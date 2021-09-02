@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_Na3AgO2
+data_Sm2CdS4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.85838022
-_cell_length_b   6.85838022
-_cell_length_c   6.85838022
-_cell_angle_alpha   132.47487977
-_cell_angle_beta   128.12892098
-_cell_angle_gamma   72.98033482
+_cell_length_a   7.39012793
+_cell_length_b   7.39012793
+_cell_length_c   7.39012793
+_cell_angle_alpha   110.61098597
+_cell_angle_beta   110.61098597
+_cell_angle_gamma   107.21497734
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Na3AgO2
-_chemical_formula_sum   'Na6 Ag2 O4'
-_cell_volume   182.82919901
+_chemical_formula_structural   Sm2CdS4
+_chemical_formula_sum   'Sm4 Cd2 S8'
+_cell_volume   310.33522669
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,15 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Na  Na0  1  0.01067300  0.76067300  0.25000000  1
-  Na  Na1  1  0.25000000  0.50000000  0.75000000  1
-  Na  Na2  1  0.51067300  0.76067300  0.75000000  1
-  Na  Na3  1  0.98932700  0.23932700  0.75000000  1
-  Na  Na4  1  0.75000000  0.50000000  0.25000000  1
-  Na  Na5  1  0.48932700  0.23932700  0.25000000  1
-  Ag  Ag6  1  0.00000000  0.00000000  0.00000000  1
-  Ag  Ag7  1  0.50000000  0.00000000  0.50000000  1
-  O  O8  1  0.86453900  0.13811500  0.27357600  1
-  O  O9  1  0.63546100  0.40903800  0.77357600  1
-  O  O10  1  0.13546100  0.86188500  0.72642400  1
-  O  O11  1  0.36453900  0.59096200  0.22642400  1
+  Sm  Sm0  1  0.73604300  0.12500000  0.11104300  1
+  Sm  Sm1  1  0.37500000  0.26395700  0.38895700  1
+  Sm  Sm2  1  0.01395700  0.62500000  0.88895700  1
+  Sm  Sm3  1  0.87500000  0.98604300  0.61104300  1
+  Cd  Cd4  1  0.50000000  0.50000000  0.00000000  1
+  Cd  Cd5  1  0.25000000  0.75000000  0.50000000  1
+  S  S6  1  0.25451300  0.99194300  0.87533500  1
+  S  S7  1  0.49548700  0.87082200  0.23743000  1
+  S  S8  1  0.62082200  0.74548700  0.73743000  1
+  S  S9  1  0.12917800  0.36660800  0.62466500  1
+  S  S10  1  0.63339200  0.25805700  0.76257000  1
+  S  S11  1  0.00805700  0.88339200  0.26257000  1
+  S  S12  1  0.11660800  0.37917800  0.12466500  1
+  S  S13  1  0.74194300  0.50451300  0.37533500  1

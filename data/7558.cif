@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_B2Mo
+data_Yb4Bi3
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   7.20393348
-_cell_length_b   7.20393348
-_cell_length_c   7.20393392
-_cell_angle_alpha   24.26346930
-_cell_angle_beta   24.26346930
-_cell_angle_gamma   24.26346317
+_cell_length_a   8.35004547
+_cell_length_b   8.35004547
+_cell_length_c   8.35004547
+_cell_angle_alpha   109.47122063
+_cell_angle_beta   109.47122063
+_cell_angle_gamma   109.47122063
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   B2Mo
-_chemical_formula_sum   'B4 Mo2'
-_cell_volume   55.49073252
+_chemical_formula_structural   Yb4Bi3
+_chemical_formula_sum   'Yb8 Bi6'
+_cell_volume   448.17190767
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,9 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  B  B0  1  0.66780400  0.66780400  0.66780400  1
-  B  B1  1  0.33219600  0.33219600  0.33219600  1
-  B  B2  1  0.81843700  0.81843700  0.81843700  1
-  B  B3  1  0.18156300  0.18156300  0.18156300  1
-  Mo  Mo4  1  0.92441900  0.92441900  0.92441900  1
-  Mo  Mo5  1  0.07558100  0.07558100  0.07558100  1
+  Yb  Yb0  1  0.14917900  0.50000000  0.00000000  1
+  Yb  Yb1  1  0.64917900  0.50000000  0.00000000  1
+  Yb  Yb2  1  0.50000000  0.00000000  0.64917900  1
+  Yb  Yb3  1  0.35082100  0.35082100  0.35082100  1
+  Yb  Yb4  1  0.50000000  0.00000000  0.14917900  1
+  Yb  Yb5  1  0.00000000  0.64917900  0.50000000  1
+  Yb  Yb6  1  0.85082100  0.85082100  0.85082100  1
+  Yb  Yb7  1  0.00000000  0.14917900  0.50000000  1
+  Bi  Bi8  1  0.37500000  0.62500000  0.75000000  1
+  Bi  Bi9  1  0.87500000  0.25000000  0.12500000  1
+  Bi  Bi10  1  0.62500000  0.75000000  0.37500000  1
+  Bi  Bi11  1  0.12500000  0.87500000  0.25000000  1
+  Bi  Bi12  1  0.25000000  0.12500000  0.87500000  1
+  Bi  Bi13  1  0.75000000  0.37500000  0.62500000  1

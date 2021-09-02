@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Ti2Nb2(CuO4)3
+data_ThSb2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.49733489
-_cell_length_b   6.49733489
-_cell_length_c   7.52828692
-_cell_angle_alpha   55.11784816
-_cell_angle_beta   55.11784816
-_cell_angle_gamma   70.95443534
+_cell_length_a   4.41484500
+_cell_length_b   4.41484500
+_cell_length_c   9.18396400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Ti2Nb2(CuO4)3
-_chemical_formula_sum   'Ti2 Nb2 Cu3 O12'
-_cell_volume   213.86694353
-_cell_formula_units_Z   1
+_chemical_formula_structural   ThSb2
+_chemical_formula_sum   'Th2 Sb4'
+_cell_volume   179.00332327
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,22 +24,9 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ti  Ti0  1  0.00000000  0.50000000  0.50000000  1
-  Ti  Ti1  1  0.50000000  0.00000000  0.50000000  1
-  Nb  Nb2  1  0.50000000  0.00000000  0.00000000  1
-  Nb  Nb3  1  0.00000000  0.50000000  0.00000000  1
-  Cu  Cu4  1  0.50000000  0.50000000  0.00000000  1
-  Cu  Cu5  1  0.50000000  0.50000000  0.50000000  1
-  Cu  Cu6  1  0.00000000  0.00000000  0.50000000  1
-  O  O7  1  0.18356900  0.18356900  0.50517500  1
-  O  O8  1  0.86940500  0.50721400  0.31329400  1
-  O  O9  1  0.49278600  0.13059500  0.68670600  1
-  O  O10  1  0.31369900  0.69009400  0.81707100  1
-  O  O11  1  0.69009400  0.31369900  0.81707100  1
-  O  O12  1  0.17810700  0.17810700  0.13454900  1
-  O  O13  1  0.82189300  0.82189300  0.86545100  1
-  O  O14  1  0.30990600  0.68630100  0.18292900  1
-  O  O15  1  0.68630100  0.30990600  0.18292900  1
-  O  O16  1  0.50721400  0.86940500  0.31329400  1
-  O  O17  1  0.13059500  0.49278600  0.68670600  1
-  O  O18  1  0.81643100  0.81643100  0.49482500  1
+  Th  Th0  1  0.50000000  0.00000000  0.27733600  1
+  Th  Th1  1  0.00000000  0.50000000  0.72266400  1
+  Sb  Sb2  1  0.50000000  0.50000000  0.00000000  1
+  Sb  Sb3  1  0.00000000  0.00000000  0.00000000  1
+  Sb  Sb4  1  0.50000000  0.00000000  0.63507200  1
+  Sb  Sb5  1  0.00000000  0.50000000  0.36492800  1

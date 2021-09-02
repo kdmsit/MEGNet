@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_PNO
+data_Co2TcO4
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.68731214
-_cell_length_b   4.68731214
-_cell_length_c   4.67753832
-_cell_angle_alpha   62.33070902
-_cell_angle_beta   62.33070902
-_cell_angle_gamma   90.07448868
+_cell_length_a   6.12852882
+_cell_length_b   6.12152875
+_cell_length_c   6.17475506
+_cell_angle_alpha   59.71126823
+_cell_angle_beta   59.73495382
+_cell_angle_gamma   56.02642114
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   PNO
-_chemical_formula_sum   'P2 N2 O2'
-_cell_volume   77.46432328
+_chemical_formula_structural   Co2TcO4
+_chemical_formula_sum   'Co4 Tc2 O8'
+_cell_volume   157.69911137
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,9 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  P  P0  1  0.98970000  0.27006000  0.00012800  1
-  P  P1  1  0.27006000  0.98970000  0.50012800  1
-  N  N2  1  0.61753500  0.25813300  0.24921100  1
-  N  N3  1  0.25813300  0.61753500  0.74921100  1
-  O  O4  1  0.99793300  0.11663900  0.75066100  1
-  O  O5  1  0.11663900  0.99793300  0.25066100  1
+  Co  Co0  1  0.00928800  0.00863300  0.99105100  1
+  Co  Co1  1  0.24071200  0.24136700  0.25894900  1
+  Co  Co2  1  0.62499900  0.62499900  0.12500100  1
+  Co  Co3  1  0.62499900  0.62500000  0.62500000  1
+  Tc  Tc4  1  0.12499600  0.62500300  0.62500200  1
+  Tc  Tc5  1  0.62500700  0.12499500  0.62499800  1
+  O  O6  1  0.37619200  0.37711200  0.38221100  1
+  O  O7  1  0.36540000  0.83699700  0.39885800  1
+  O  O8  1  0.37599300  0.37721800  0.86446600  1
+  O  O9  1  0.83727500  0.36554400  0.39871600  1
+  O  O10  1  0.41272500  0.88445700  0.85128200  1
+  O  O11  1  0.87400700  0.87278400  0.38553000  1
+  O  O12  1  0.88459800  0.41300600  0.85114200  1
+  O  O13  1  0.87380800  0.87288500  0.86779400  1

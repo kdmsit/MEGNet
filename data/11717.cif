@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_BH6N
+data_SiNi
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.94102800
-_cell_length_b   5.02302300
-_cell_length_c   5.41648300
+_cell_length_a   3.35012600
+_cell_length_b   5.15462800
+_cell_length_c   5.58064800
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   BH6N
-_chemical_formula_sum   'B2 H12 N2'
-_cell_volume   134.43113524
-_cell_formula_units_Z   2
+_chemical_formula_structural   SiNi
+_chemical_formula_sum   'Si4 Ni4'
+_cell_volume   96.37027541
+_cell_formula_units_Z   4
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,19 +24,11 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  B  B0  1  0.17886900  0.99229200  0.00000000  1
-  B  B1  1  0.82113100  0.49229200  0.50000000  1
-  H  H2  1  0.71985800  0.39699500  0.31417000  1
-  H  H3  1  0.84761000  0.89650500  0.34666600  1
-  H  H4  1  0.71985800  0.39699500  0.68583000  1
-  H  H5  1  0.28014200  0.89699500  0.81417000  1
-  H  H6  1  0.28014200  0.89699500  0.18583000  1
-  H  H7  1  0.06703800  0.45612500  0.50000000  1
-  H  H8  1  0.93296200  0.95612500  0.00000000  1
-  H  H9  1  0.15239000  0.39650500  0.15333400  1
-  H  H10  1  0.43706600  0.34835300  0.00000000  1
-  H  H11  1  0.56293400  0.84835300  0.50000000  1
-  H  H12  1  0.84761000  0.89650500  0.65333400  1
-  H  H13  1  0.15239000  0.39650500  0.84666600  1
-  N  N14  1  0.76589300  0.80522900  0.50000000  1
-  N  N15  1  0.23410700  0.30522900  0.00000000  1
+  Si  Si0  1  0.75000000  0.32157900  0.91656200  1
+  Si  Si1  1  0.75000000  0.82157900  0.58343800  1
+  Si  Si2  1  0.25000000  0.67842100  0.08343800  1
+  Si  Si3  1  0.25000000  0.17842100  0.41656200  1
+  Ni  Ni4  1  0.25000000  0.00919300  0.81196100  1
+  Ni  Ni5  1  0.25000000  0.50919300  0.68803900  1
+  Ni  Ni6  1  0.75000000  0.99080700  0.18803900  1
+  Ni  Ni7  1  0.75000000  0.49080700  0.31196100  1

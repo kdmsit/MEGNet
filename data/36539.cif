@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_NiAgF3
+data_RbSeBr3
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.00395400
-_cell_length_b   4.00395400
-_cell_length_c   4.00395400
+_cell_length_a   5.52311200
+_cell_length_b   5.52311200
+_cell_length_c   5.51772700
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
 _cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   NiAgF3
-_chemical_formula_sum   'Ni1 Ag1 F3'
-_cell_volume   64.18997967
+_chemical_formula_structural   RbSeBr3
+_chemical_formula_sum   'Rb1 Se1 Br3'
+_cell_volume   168.31697189
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,8 +24,8 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ni  Ni0  1  0.00000000  0.00000000  0.00000000  1
-  Ag  Ag1  1  0.50000000  0.50000000  0.50000000  1
-  F  F2  1  0.50000000  0.00000000  0.00000000  1
-  F  F3  1  0.00000000  0.50000000  0.00000000  1
-  F  F4  1  0.00000000  0.00000000  0.50000000  1
+  Rb  Rb0  1  0.50000000  0.50000000  0.99744600  1
+  Se  Se1  1  0.00000000  0.00000000  0.48551200  1
+  Br  Br2  1  0.00000000  0.50000000  0.48508400  1
+  Br  Br3  1  0.00000000  0.00000000  0.98539300  1
+  Br  Br4  1  0.50000000  0.00000000  0.48508400  1

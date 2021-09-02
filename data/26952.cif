@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_LiFe(CoO3)2
+data_LiMn5O3F5
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   6.54234775
-_cell_length_b   2.88058675
-_cell_length_c   5.94189266
-_cell_angle_alpha   89.98781491
-_cell_angle_beta   104.92589906
-_cell_angle_gamma   77.28999836
+_cell_length_a   6.41095894
+_cell_length_b   6.41095894
+_cell_length_c   6.41137187
+_cell_angle_alpha   60.14045127
+_cell_angle_beta   60.14045127
+_cell_angle_gamma   59.63306969
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   LiFe(CoO3)2
-_chemical_formula_sum   'Li1 Fe1 Co2 O6'
-_cell_volume   105.35777476
+_chemical_formula_structural   LiMn5O3F5
+_chemical_formula_sum   'Li1 Mn5 O3 F5'
+_cell_volume   186.19877156
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,13 +24,17 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Li  Li0  1  0.33325900  0.33337200  0.83310500  1
-  Fe  Fe1  1  0.33368400  0.33314500  0.33314800  1
-  Co  Co2  1  0.67611400  0.66194000  0.66260000  1
-  Co  Co3  1  0.99041200  0.00476700  0.00438200  1
-  O  O4  1  0.00772200  0.49613400  0.21061400  1
-  O  O5  1  0.36827700  0.81573600  0.58134800  1
-  O  O6  1  0.29870600  0.85077200  0.08500300  1
-  O  O7  1  0.68703400  0.15637600  0.87654600  1
-  O  O8  1  0.65902800  0.17056600  0.45626200  1
-  O  O9  1  0.97909800  0.51052600  0.79032400  1
+  Li  Li0  1  0.39330600  0.39330600  0.35082100  1
+  Mn  Mn1  1  0.02249100  0.02249100  0.00891600  1
+  Mn  Mn2  1  0.71592700  0.71592700  0.77476800  1
+  Mn  Mn3  1  0.86388100  0.38743900  0.36052200  1
+  Mn  Mn4  1  0.38743900  0.86388100  0.36052200  1
+  Mn  Mn5  1  0.37620800  0.37620800  0.86948200  1
+  O  O6  1  0.60185000  0.60185000  0.61507000  1
+  O  O7  1  0.61094400  0.61094400  0.15221000  1
+  O  O8  1  0.15025700  0.15025700  0.13772300  1
+  F  F9  1  0.12871600  0.60935600  0.61839400  1
+  F  F10  1  0.60935600  0.12871600  0.61839400  1
+  F  F11  1  0.61910900  0.13820200  0.13536400  1
+  F  F12  1  0.13820200  0.61910900  0.13536400  1
+  F  F13  1  0.13231300  0.13231300  0.61244900  1

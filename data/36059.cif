@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Ba2TlZn
+data_BC
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.97306675
-_cell_length_b   5.97306675
-_cell_length_c   5.97306675
-_cell_angle_alpha   60.00000000
-_cell_angle_beta   60.00000000
-_cell_angle_gamma   60.00000000
+_cell_length_a   2.59166858
+_cell_length_b   2.59166858
+_cell_length_c   4.65746400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00001490
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Ba2TlZn
-_chemical_formula_sum   'Ba2 Tl1 Zn1'
-_cell_volume   150.68745755
-_cell_formula_units_Z   1
+_chemical_formula_structural   BC
+_chemical_formula_sum   'B2 C2'
+_cell_volume   27.09187116
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,7 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Ba  Ba0  1  0.25000000  0.25000000  0.25000000  1
-  Ba  Ba1  1  0.75000000  0.75000000  0.75000000  1
-  Tl  Tl2  1  0.50000000  0.50000000  0.50000000  1
-  Zn  Zn3  1  0.00000000  0.00000000  0.00000000  1
+  B  B0  1  0.66666700  0.33333300  0.51948300  1
+  B  B1  1  0.33333300  0.66666700  0.01948300  1
+  C  C2  1  0.66666700  0.33333300  0.85551800  1
+  C  C3  1  0.33333300  0.66666700  0.35551800  1

@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_ThSn2
+data_Th5Sn3
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   8.70727660
-_cell_length_b   8.70727660
-_cell_length_c   4.46554100
+_cell_length_a   9.43806967
+_cell_length_b   9.43806967
+_cell_length_c   6.46138300
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   149.60238245
+_cell_angle_gamma   119.99999768
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   ThSn2
-_chemical_formula_sum   'Th2 Sn4'
-_cell_volume   171.31187786
+_chemical_formula_structural   Th5Sn3
+_chemical_formula_sum   'Th10 Sn6'
+_cell_volume   498.45101448
 _cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,9 +24,19 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Th  Th0  1  0.89750200  0.10249800  0.75000000  1
-  Th  Th1  1  0.10249800  0.89750200  0.25000000  1
-  Sn  Sn2  1  0.56137900  0.43862100  0.75000000  1
-  Sn  Sn3  1  0.43862100  0.56137900  0.25000000  1
-  Sn  Sn4  1  0.25107900  0.74892100  0.75000000  1
-  Sn  Sn5  1  0.74892100  0.25107900  0.25000000  1
+  Th  Th0  1  0.33333300  0.66666700  0.00000000  1
+  Th  Th1  1  0.66666700  0.33333300  0.50000000  1
+  Th  Th2  1  0.66666700  0.33333300  0.00000000  1
+  Th  Th3  1  0.33333300  0.66666700  0.50000000  1
+  Th  Th4  1  0.25258500  0.00000000  0.25000000  1
+  Th  Th5  1  0.25258500  0.25258500  0.75000000  1
+  Th  Th6  1  0.00000000  0.74741500  0.75000000  1
+  Th  Th7  1  0.00000000  0.25258500  0.25000000  1
+  Th  Th8  1  0.74741500  0.74741500  0.25000000  1
+  Th  Th9  1  0.74741500  0.00000000  0.75000000  1
+  Sn  Sn10  1  0.61131500  0.00000000  0.25000000  1
+  Sn  Sn11  1  0.61131500  0.61131500  0.75000000  1
+  Sn  Sn12  1  0.00000000  0.38868500  0.75000000  1
+  Sn  Sn13  1  0.00000000  0.61131500  0.25000000  1
+  Sn  Sn14  1  0.38868500  0.38868500  0.25000000  1
+  Sn  Sn15  1  0.38868500  0.00000000  0.75000000  1

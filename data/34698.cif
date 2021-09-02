@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_Lu2GaAg
+data_Nd3Ag
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.00935374
-_cell_length_b   5.00935374
-_cell_length_c   5.00935374
-_cell_angle_alpha   60.00000000
-_cell_angle_beta   60.00000000
-_cell_angle_gamma   60.00000000
+_cell_length_a   7.11571529
+_cell_length_b   7.11571529
+_cell_length_c   5.43567300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999338
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   Lu2GaAg
-_chemical_formula_sum   'Lu2 Ga1 Ag1'
-_cell_volume   88.88533328
-_cell_formula_units_Z   1
+_chemical_formula_structural   Nd3Ag
+_chemical_formula_sum   'Nd6 Ag2'
+_cell_volume   238.35326698
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,7 +24,11 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Lu  Lu0  1  0.25000000  0.25000000  0.25000000  1
-  Lu  Lu1  1  0.75000000  0.75000000  0.75000000  1
-  Ga  Ga2  1  0.00000000  0.00000000  0.00000000  1
-  Ag  Ag3  1  0.50000000  0.50000000  0.50000000  1
+  Nd  Nd0  1  0.17513900  0.35027900  0.25000000  1
+  Nd  Nd1  1  0.64972100  0.82486100  0.25000000  1
+  Nd  Nd2  1  0.17513900  0.82486100  0.25000000  1
+  Nd  Nd3  1  0.82486100  0.64972100  0.75000000  1
+  Nd  Nd4  1  0.35027900  0.17513900  0.75000000  1
+  Nd  Nd5  1  0.82486100  0.17513900  0.75000000  1
+  Ag  Ag6  1  0.33333300  0.66666700  0.75000000  1
+  Ag  Ag7  1  0.66666700  0.33333300  0.25000000  1

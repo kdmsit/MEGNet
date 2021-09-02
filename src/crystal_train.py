@@ -36,7 +36,7 @@ with open(hash_file) as f:
     reader = csv.reader(f)
     cif_mpid = [row for row in reader]
 
-graph_converter=CrystalGraph(bond_converter=GaussianDistance(np.linspace(0, 5, 10), 0.5))
+graph_converter=CrystalGraph(bond_converter=GaussianDistance(np.linspace(0, 8, 10), 0.2))
 structures=[]
 targets=[]
 for i in idx_train:
@@ -48,7 +48,6 @@ for i in idx_train:
             targets.append(p)
         except:
             continue
-
 
 
 model = MEGNetModel(10, 2, nblocks=1, lr=1e-2,
@@ -69,7 +68,7 @@ for i in idx_test:
         ae = abs(float(pred_target[0])-true_target)
         ae_list.append(ae)
         final_test_list.append([i, mpid,pred_target[0], true_target, ae])
-        print(str(mpid)+str(pred_target)+" "+str(true_target)+" "+ str(ae))
+        print(str(mpid)+str(pred_target[0])+" "+str(true_target)+" "+ str(ae))
     except:
         # structures_invalid.append(new_structure)
         continue

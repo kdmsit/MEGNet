@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_LiGaAu2
+data_LiGaCu2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.50121832
-_cell_length_b   4.50121832
-_cell_length_c   4.50121832
+_cell_length_a   4.15735371
+_cell_length_b   4.15735371
+_cell_length_c   4.15735371
 _cell_angle_alpha   60.00000000
 _cell_angle_beta   60.00000000
 _cell_angle_gamma   60.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   LiGaAu2
-_chemical_formula_sum   'Li1 Ga1 Au2'
-_cell_volume   64.48745480
+_chemical_formula_structural   LiGaCu2
+_chemical_formula_sum   'Li1 Ga1 Cu2'
+_cell_volume   50.80844815
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -26,5 +26,5 @@ loop_
  _atom_site_occupancy
   Li  Li0  1  0.00000000  0.00000000  0.00000000  1
   Ga  Ga1  1  0.50000000  0.50000000  0.50000000  1
-  Au  Au2  1  0.75000000  0.75000000  0.75000000  1
-  Au  Au3  1  0.25000000  0.25000000  0.25000000  1
+  Cu  Cu2  1  0.75000000  0.75000000  0.75000000  1
+  Cu  Cu3  1  0.25000000  0.25000000  0.25000000  1

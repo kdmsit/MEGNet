@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_K5InPb8
+data_NiSe
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   13.60466187
-_cell_length_b   13.60466187
-_cell_length_c   13.60466203
-_cell_angle_alpha   30.11230958
-_cell_angle_beta   30.11230958
-_cell_angle_gamma   30.11230694
+_cell_length_a   3.65439000
+_cell_length_b   3.65439000
+_cell_length_c   5.43015800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   K5InPb8
-_chemical_formula_sum   'K5 In1 Pb8'
-_cell_volume   561.49360613
-_cell_formula_units_Z   1
+_chemical_formula_structural   NiSe
+_chemical_formula_sum   'Ni2 Se2'
+_cell_volume   72.51740488
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,17 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  K  K0  1  0.31807900  0.31807900  0.31807900  1
-  K  K1  1  0.50000000  0.50000000  0.50000000  1
-  K  K2  1  0.78017100  0.78017100  0.78017100  1
-  K  K3  1  0.68192100  0.68192100  0.68192100  1
-  K  K4  1  0.21982900  0.21982900  0.21982900  1
-  In  In5  1  0.00000000  0.00000000  0.00000000  1
-  Pb  Pb6  1  0.77587600  0.77587600  0.25048700  1
-  Pb  Pb7  1  0.87158000  0.87158000  0.87158000  1
-  Pb  Pb8  1  0.22412400  0.74951300  0.22412400  1
-  Pb  Pb9  1  0.25048700  0.77587600  0.77587600  1
-  Pb  Pb10  1  0.12842000  0.12842000  0.12842000  1
-  Pb  Pb11  1  0.77587600  0.25048700  0.77587600  1
-  Pb  Pb12  1  0.74951200  0.22412400  0.22412400  1
-  Pb  Pb13  1  0.22412400  0.22412400  0.74951300  1
+  Ni  Ni0  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni1  1  0.50000000  0.50000000  0.00000000  1
+  Se  Se2  1  0.50000000  0.00000000  0.72381500  1
+  Se  Se3  1  0.00000000  0.50000000  0.27618500  1

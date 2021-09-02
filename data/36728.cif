@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_YAg2
+data_Mn3Fe
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   5.33773176
-_cell_length_b   5.33773176
-_cell_length_c   5.33773176
-_cell_angle_alpha   138.67349685
-_cell_angle_beta   138.67349685
-_cell_angle_gamma   59.87305687
+_cell_length_a   5.06002500
+_cell_length_b   2.53633700
+_cell_length_c   3.51291400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   YAg2
-_chemical_formula_sum   'Y1 Ag2'
-_cell_volume   65.64165879
+_chemical_formula_structural   Mn3Fe
+_chemical_formula_sum   'Mn3 Fe1'
+_cell_volume   45.08448755
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,6 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Y  Y0  1  0.00000000  0.00000000  0.00000000  1
-  Ag  Ag1  1  0.66929300  0.66929300  0.00000000  1
-  Ag  Ag2  1  0.33070700  0.33070700  0.00000000  1
+  Mn  Mn0  1  0.50000000  0.00000000  0.00000000  1
+  Mn  Mn1  1  0.75278400  0.50000000  0.50000000  1
+  Mn  Mn2  1  0.24721600  0.50000000  0.50000000  1
+  Fe  Fe3  1  0.00000000  0.00000000  0.00000000  1

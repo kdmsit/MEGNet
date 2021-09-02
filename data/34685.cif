@@ -1,17 +1,17 @@
 # generated using pymatgen
-data_NpBeO3
+data_NiN
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   3.56977300
-_cell_length_b   3.56977300
-_cell_length_c   3.56977300
+_cell_length_a   3.03346770
+_cell_length_b   3.03346770
+_cell_length_c   5.07046300
 _cell_angle_alpha   90.00000000
 _cell_angle_beta   90.00000000
-_cell_angle_gamma   90.00000000
+_cell_angle_gamma   119.99999340
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   NpBeO3
-_chemical_formula_sum   'Np1 Be1 O3'
-_cell_volume   45.49061427
-_cell_formula_units_Z   1
+_chemical_formula_structural   NiN
+_chemical_formula_sum   'Ni2 N2'
+_cell_volume   40.40703909
+_cell_formula_units_Z   2
 loop_
  _symmetry_equiv_pos_site_id
  _symmetry_equiv_pos_as_xyz
@@ -24,8 +24,7 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  Np  Np0  1  0.00000000  0.00000000  0.00000000  1
-  Be  Be1  1  0.50000000  0.50000000  0.50000000  1
-  O  O2  1  0.50000000  0.50000000  0.00000000  1
-  O  O3  1  0.50000000  0.00000000  0.50000000  1
-  O  O4  1  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni0  1  0.66666700  0.33333300  0.87304600  1
+  Ni  Ni1  1  0.33333300  0.66666700  0.37304600  1
+  N  N2  1  0.66666700  0.33333300  0.50195600  1
+  N  N3  1  0.33333300  0.66666700  0.00195600  1

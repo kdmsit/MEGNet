@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_CaDyRh2
+data_CaNdZn2
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.83844462
-_cell_length_b   4.83844462
-_cell_length_c   4.83844462
+_cell_length_a   5.20864472
+_cell_length_b   5.20864472
+_cell_length_c   5.20864472
 _cell_angle_alpha   60.00000000
 _cell_angle_beta   60.00000000
 _cell_angle_gamma   60.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   CaDyRh2
-_chemical_formula_sum   'Ca1 Dy1 Rh2'
-_cell_volume   80.09443191
+_chemical_formula_structural   CaNdZn2
+_chemical_formula_sum   'Ca1 Nd1 Zn2'
+_cell_volume   99.92156039
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -25,6 +25,6 @@ loop_
  _atom_site_fract_z
  _atom_site_occupancy
   Ca  Ca0  1  0.50000000  0.50000000  0.50000000  1
-  Dy  Dy1  1  0.00000000  0.00000000  0.00000000  1
-  Rh  Rh2  1  0.25000000  0.25000000  0.25000000  1
-  Rh  Rh3  1  0.75000000  0.75000000  0.75000000  1
+  Nd  Nd1  1  0.00000000  0.00000000  0.00000000  1
+  Zn  Zn2  1  0.25000000  0.25000000  0.25000000  1
+  Zn  Zn3  1  0.75000000  0.75000000  0.75000000  1

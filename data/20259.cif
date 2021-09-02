@@ -1,16 +1,16 @@
 # generated using pymatgen
-data_KMnRu
+data_InSiIr
 _symmetry_space_group_name_H-M   'P 1'
-_cell_length_a   4.61796872
-_cell_length_b   4.61796872
-_cell_length_c   4.61796872
+_cell_length_a   4.39377769
+_cell_length_b   4.39377769
+_cell_length_c   4.39377769
 _cell_angle_alpha   60.00000000
 _cell_angle_beta   60.00000000
 _cell_angle_gamma   60.00000000
 _symmetry_Int_Tables_number   1
-_chemical_formula_structural   KMnRu
-_chemical_formula_sum   'K1 Mn1 Ru1'
-_cell_volume   69.63666499
+_chemical_formula_structural   InSiIr
+_chemical_formula_sum   'In1 Si1 Ir1'
+_cell_volume   59.97900271
 _cell_formula_units_Z   1
 loop_
  _symmetry_equiv_pos_site_id
@@ -24,6 +24,6 @@ loop_
  _atom_site_fract_y
  _atom_site_fract_z
  _atom_site_occupancy
-  K  K0  1  0.00000000  0.00000000  0.00000000  1
-  Mn  Mn1  1  0.50000000  0.50000000  0.50000000  1
-  Ru  Ru2  1  0.75000000  0.75000000  0.75000000  1
+  In  In0  1  0.75000000  0.75000000  0.75000000  1
+  Si  Si1  1  0.50000000  0.50000000  0.50000000  1
+  Ir  Ir2  1  0.00000000  0.00000000  0.00000000  1
