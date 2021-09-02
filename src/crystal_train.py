@@ -36,11 +36,13 @@ with open(hash_file) as f:
 structures=[]
 targets=[]
 for i in idx_train:
-    s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-    structures.append((s))
-    p = float(id_prop_data[i][index])
-    targets.append(p)
-
+    try:
+        s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
+        structures.append((s))
+        p = float(id_prop_data[i][index])
+        targets.append(p)
+    except:
+        continue
 
 from megnet.data.crystal import CrystalGraph
 from megnet.data.graph import GaussianDistance
