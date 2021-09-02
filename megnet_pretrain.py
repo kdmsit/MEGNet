@@ -2,7 +2,7 @@ from megnet.utils.models import load_model
 from pymatgen.core.structure import Structure
 from sklearn.model_selection import train_test_split
 from data import *
-
+import pandas as pd
 model = load_model("Eform_MP_2019")
 
 data_path = 'data/'
