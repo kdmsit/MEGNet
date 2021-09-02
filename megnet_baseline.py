@@ -24,11 +24,10 @@ print(model.summary())
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
-data_path = 'data/'
+data_path = 'data_100/'
 
 # property='bm'
 # prop={'bm':1,'sm':2,'pr':3}
-
 property='formation_energy'
 prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
@@ -43,6 +42,14 @@ id_prop_file = os.path.join(data_path, 'id_prop.csv')
 with open(id_prop_file) as f:
     reader = csv.reader(f)
     id_prop_data = [row for row in reader]
+
+hash_file = os.path.join(data_path, 'material_id_hash.csv')
+with open(hash_file) as f:
+    reader = csv.reader(f)
+    cif_mpid = [row for row in reader]
+
+for i in idx_test:
+    mpid=cif_mpid[i][1]
 
 print("Train Data Load Started......")
 graphs_valid = []
