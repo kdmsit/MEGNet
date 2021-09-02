@@ -18,6 +18,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--data-path', type=str, default='../data/', help='Root Data Path')
 parser.add_argument('--property', type=str, default='formation_energy', help='Property')
 parser.add_argument('--test-ratio', type=float, default=0.8, help='Test Split')
+parser.add_argument('--epoch', type=int, default=1000, help='Number of Training Epoch')
 args = parser.parse_args()
 
 data_path = args.data_path
@@ -59,7 +60,7 @@ model = MEGNetModel(10, 2, nblocks=1, lr=1e-2,
                     n1=4, n2=4, n3=4, npass=1, ntarget=1,
                     graph_converter=CrystalGraph(bond_converter=GaussianDistance(np.linspace(0, 5, 10), 0.5)))
 
-model.train(structures, targets, epochs=100)
+model.train(structures, targets, epochs=args.epoch)
 
 # Test
 final_test_list=[["Cif","Mpid","True","Predicted","Absolute Error"]]
