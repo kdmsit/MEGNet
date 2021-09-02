@@ -9,19 +9,24 @@ from sklearn.model_selection import train_test_split
 from megnet.data.crystal import CrystalGraph
 from megnet.data.graph import GaussianDistance
 from megnet.models import MEGNetModel
+import argparse
 
 # data = loadfn('bulk_moduli.json')
 # structures = data['structures']
 # targets = np.log10(data['bulk_moduli'])
+parser = argparse.ArgumentParser()
+parser.add_argument('--data-path', type=str, default='../data/', help='Root Data Path')
+parser.add_argument('--property', type=str, default='formation_energy', help='Property')
+parser.add_argument('--test-ratio', type=float, default=0.8, help='Test Split')
+args = parser.parse_args()
 
-
-data_path = '../data/'
-property='formation_energy'
+data_path = args.data_path
+property=args.property
 prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
 index=prop[property]
 radius=8
 max_num_nbr = 12
-test_size=0.8
+test_size=args.test_ratio
 full_dataset = CIFData(data_path,max_num_nbr,radius)
 datasize=len(full_dataset)
 idx_train, idx_test = train_test_split(range(datasize), test_size=test_size, random_state=42)
