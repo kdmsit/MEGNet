@@ -6,6 +6,9 @@ import os
 import csv
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from megnet.data.crystal import CrystalGraph
+from megnet.data.graph import GaussianDistance
+from megnet.models import MEGNetModel
 
 # data = loadfn('bulk_moduli.json')
 # structures = data['structures']
@@ -33,20 +36,20 @@ with open(hash_file) as f:
     reader = csv.reader(f)
     cif_mpid = [row for row in reader]
 
+graph_converter=CrystalGraph(bond_converter=GaussianDistance(np.linspace(0, 5, 10), 0.5))
 structures=[]
 targets=[]
 for i in idx_train:
-    try:
         s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-        structures.append((s))
-        p = float(id_prop_data[i][index])
-        targets.append(p)
-    except:
-        continue
+        try:
+            graph = graph_converter.convert(s)
+            structures.append((s))
+            p = float(id_prop_data[i][index])
+            targets.append(p)
+        except:
+            continue
 
-from megnet.data.crystal import CrystalGraph
-from megnet.data.graph import GaussianDistance
-from megnet.models import MEGNetModel
+
 
 model = MEGNetModel(10, 2, nblocks=1, lr=1e-2,
                     n1=4, n2=4, n3=4, npass=1, ntarget=1,
