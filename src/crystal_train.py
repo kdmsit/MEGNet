@@ -15,16 +15,16 @@ import argparse
 # structures = data['structures']
 # targets = np.log10(data['bulk_moduli'])
 parser = argparse.ArgumentParser()
-parser.add_argument('--data-path', type=str, default='../data_elasticity/', help='Root Data Path')
-parser.add_argument('--property', type=str, default='formation_energy', help='Property')
+parser.add_argument('--data-path', type=str, default='../data/', help='Root Data Path')
+parser.add_argument('--property', type=str, default='sm', help='Property')
 parser.add_argument('--test-ratio', type=float, default=0.8, help='Test Split')
-parser.add_argument('--epoch', type=int, default=1000, help='Number of Training Epoch')
+parser.add_argument('--epoch', type=int, default=200, help='Number of Training Epoch')
 args = parser.parse_args()
 
 data_path = args.data_path
 property=args.property
-# prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
-prop={'bm':1,'sm':2,'pr':3}
+prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5}
+# prop={'bm':1,'sm':2,'pr':3}
 index=prop[property]
 radius=8
 max_num_nbr = 12
@@ -51,8 +51,8 @@ for i in idx_train:
         try:
             graph = graph_converter.convert(s)
             structures.append((s))
-            p = float(id_prop_data[i][index])
-            # p=np.log10(float(id_prop_data[i][index]))
+            # p = float(id_prop_data[i][index])
+            p=np.log10(float(id_prop_data[i][index]))
             targets.append(p)
         except:
             continue
@@ -72,8 +72,8 @@ for i in idx_test:
         mpid = cif_mpid[i][1]
         new_structure = Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
         pred_target = model.predict_structure(new_structure).ravel()
-        true_target = float(id_prop_data[i][index])
-        # true_target = np.log10(float(id_prop_data[i][index]))
+        # true_target = float(id_prop_data[i][index])
+        true_target = np.log10(float(id_prop_data[i][index]))
         ae = abs(float(pred_target[0])-true_target)
         ae_list.append(ae)
         final_test_list.append([i, mpid,pred_target[0], true_target, ae])
@@ -84,3 +84,4 @@ for i in idx_test:
 print("MAE : "+str(np.mean(ae_list)))
 my_df = pd.DataFrame(final_test_list)
 my_df.to_csv('test_'+property+'.csv', index=False, header=False)
+torch.save(model, "model.pth")
