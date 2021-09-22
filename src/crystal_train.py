@@ -51,8 +51,8 @@ for i in idx_train:
         try:
             graph = graph_converter.convert(s)
             structures.append((s))
-            # p = float(id_prop_data[i][index])
-            p=np.log10(float(id_prop_data[i][index]))
+            p = float(id_prop_data[i][index])
+            # p=np.log10(float(id_prop_data[i][index]))
             targets.append(p)
         except:
             continue
@@ -72,8 +72,8 @@ for i in idx_test:
         mpid = cif_mpid[i][1]
         new_structure = Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
         pred_target = model.predict_structure(new_structure).ravel()
-        # true_target = float(id_prop_data[i][index])
-        true_target = np.log10(float(id_prop_data[i][index]))
+        true_target = float(id_prop_data[i][index])
+        # true_target = np.log10(float(id_prop_data[i][index]))
         ae = abs(float(pred_target[0])-true_target)
         ae_list.append(ae)
         final_test_list.append([i, mpid,pred_target[0], true_target, ae])
@@ -84,4 +84,4 @@ for i in idx_test:
 print("MAE : "+str(np.mean(ae_list)))
 my_df = pd.DataFrame(final_test_list)
 my_df.to_csv('test_'+property+'.csv', index=False, header=False)
-torch.save(model, "model.pth")
+torch.save(model, "model_bg.pth")
