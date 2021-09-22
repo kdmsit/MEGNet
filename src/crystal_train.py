@@ -84,4 +84,10 @@ model.train(structures, targets, epochs=args.epoch)
 # print("MAE : "+str(np.mean(ae_list)))
 # my_df = pd.DataFrame(final_test_list)
 # my_df.to_csv('test_'+property+'.csv', index=False, header=False)
-torch.save(model, "model_bg")
+
+
+import pickle as pkl
+pkl_out=open("model_bg","wb")
+pkl.dump(model,pkl_out)
+pkl_out.close()
+# torch.save(model, "model_bg")
