@@ -65,23 +65,23 @@ model = MEGNetModel(10, 2, nblocks=1, lr=1e-2,
 model.train(structures, targets, epochs=args.epoch)
 
 # Test
-final_test_list=[["Cif","Mpid","True","Predicted","Absolute Error"]]
-ae_list=[]
-for i in idx_test:
-    try:
-        mpid = cif_mpid[i][1]
-        new_structure = Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-        pred_target = model.predict_structure(new_structure).ravel()
-        true_target = float(id_prop_data[i][index])
-        # true_target = np.log10(float(id_prop_data[i][index]))
-        ae = abs(float(pred_target[0])-true_target)
-        ae_list.append(ae)
-        final_test_list.append([i, mpid,pred_target[0], true_target, ae])
-        print(str(mpid)+str(pred_target[0])+" "+str(true_target)+" "+ str(ae))
-    except:
-        # structures_invalid.append(new_structure)
-        continue
-print("MAE : "+str(np.mean(ae_list)))
-my_df = pd.DataFrame(final_test_list)
-my_df.to_csv('test_'+property+'.csv', index=False, header=False)
-torch.save(model, "model_bg.pth")
+# final_test_list=[["Cif","Mpid","True","Predicted","Absolute Error"]]
+# ae_list=[]
+# for i in idx_test:
+#     try:
+#         mpid = cif_mpid[i][1]
+#         new_structure = Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
+#         pred_target = model.predict_structure(new_structure).ravel()
+#         true_target = float(id_prop_data[i][index])
+#         # true_target = np.log10(float(id_prop_data[i][index]))
+#         ae = abs(float(pred_target[0])-true_target)
+#         ae_list.append(ae)
+#         final_test_list.append([i, mpid,pred_target[0], true_target, ae])
+#         print(str(mpid)+str(pred_target[0])+" "+str(true_target)+" "+ str(ae))
+#     except:
+#         # structures_invalid.append(new_structure)
+#         continue
+# print("MAE : "+str(np.mean(ae_list)))
+# my_df = pd.DataFrame(final_test_list)
+# my_df.to_csv('test_'+property+'.csv', index=False, header=False)
+torch.save(model)
