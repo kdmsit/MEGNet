@@ -2,7 +2,7 @@ from matminer.utils.io import load_dataframe_from_json
 import pickle as pkl
 import os
 
-mp_e_form = load_dataframe_from_json("../../npj_data/matbench_mp_e_form.json.gz")    #matbench_mp_e_form
+mp_e_form = load_dataframe_from_json("../npj_data/matbench_mp_e_form.json.gz")    #matbench_mp_e_form
 # mp_e_form = load_dataframe_from_json("../matbench_jdft2d.json.gz")    #matbench_mp_e_form
 # print(mp_e_form.shape[0])
 directory = "../new_data/"
