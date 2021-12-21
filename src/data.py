@@ -235,12 +235,12 @@ class CIFData(Dataset):
 		self.root_dir = root_dir
 		self.max_num_nbr, self.radius = max_num_nbr, radius
 		assert os.path.exists(root_dir), 'root_dir does not exist!'
-		id_prop_file = os.path.join(self.root_dir, 'id_prop.csv')
+		id_prop_file = os.path.join('../id_prop.csv')
 		assert os.path.exists(id_prop_file), 'id_prop.csv does not exist!'
 		with open(id_prop_file) as f:
 			reader = csv.reader(f)
 			self.id_prop_data = [row for row in reader]
-		atom_init_file = os.path.join(self.root_dir, 'atom_init.json')
+		atom_init_file = os.path.join('../atom_init.json')
 		assert os.path.exists(atom_init_file), 'atom_init.json does not exist!'
 		self.ari = AtomCustomJSONInitializer(atom_init_file)
 		self.gdf = GaussianDistance(dmin=dmin, dmax=self.radius, step=step)

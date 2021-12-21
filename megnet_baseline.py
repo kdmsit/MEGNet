@@ -36,7 +36,7 @@ radius=8
 max_num_nbr = 12
 test_size=0.4
 full_dataset = CIFData(data_path,max_num_nbr,radius)
-datasize=132752
+datasize=636 #132752
 idx_train, idx_test = train_test_split(range(datasize), test_size=test_size, random_state=42)
 idx_val, idx_test = train_test_split(idx_test, test_size=0.5, random_state=42)
 print("Test size " + str(len(idx_test)))
@@ -66,8 +66,8 @@ for i in idx_train:
     with open(file_path, 'rb') as handle:
         sentences = pkl.load(handle)
     s, p = sentences[0], sentences[1]
-    targets = []
-    targets.append(property)
+    # targets = []
+    # targets.append(property)
     # p = np.log10(float(id_prop_data[i][index]))
     try:
         graph = graph_converter.convert(s)
