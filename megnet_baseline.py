@@ -6,13 +6,14 @@ import numpy as np
 from pymatgen.core.structure import Structure
 import os
 import csv
+import pickle as pkl
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import tqdm
 
 
 nfeat_bond = 100
-epoch=1000
+epoch=200
 r_cutoff = 5
 gaussian_centers = np.linspace(0, r_cutoff + 1, nfeat_bond)
 gaussian_width = 0.5
@@ -24,7 +25,7 @@ print(model.summary())
 # Model training
 # Here, `structures` is a list of pymatgen Structure objects.
 # `targets` is a corresponding list of properties.
-data_path = 'data_100/'
+data_path = '../new_data/'
 
 # property='bm'
 # prop={'bm':1,'sm':2,'pr':3}
@@ -35,29 +36,35 @@ radius=8
 max_num_nbr = 12
 test_size=0.8
 full_dataset = CIFData(data_path,max_num_nbr,radius)
-datasize=len(full_dataset)
+datasize=132752
 idx_train, idx_test = train_test_split(range(datasize), test_size=test_size, random_state=42)
 
-id_prop_file = os.path.join(data_path, 'id_prop.csv')
-with open(id_prop_file) as f:
-    reader = csv.reader(f)
-    id_prop_data = [row for row in reader]
-
-hash_file = os.path.join(data_path, 'material_id_hash.csv')
-with open(hash_file) as f:
-    reader = csv.reader(f)
-    cif_mpid = [row for row in reader]
-
-for i in idx_test:
-    mpid=cif_mpid[i][1]
+# id_prop_file = os.path.join(data_path, 'id_prop.csv')
+# with open(id_prop_file) as f:
+#     reader = csv.reader(f)
+#     id_prop_data = [row for row in reader]
+#
+# hash_file = os.path.join(data_path, 'material_id_hash.csv')
+# with open(hash_file) as f:
+#     reader = csv.reader(f)
+#     cif_mpid = [row for row in reader]
+#
+# for i in idx_test:
+#     mpid=cif_mpid[i][1]
 
 print("Train Data Load Started......")
 graphs_valid = []
 targets_valid = []
 structures_invalid = []
 for i in idx_train:
-    s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
-    p=float(id_prop_data[i][index])
+    # s=Structure.from_file(os.path.join(data_path, str(i) + '.cif'))
+    # p=float(id_prop_data[i][index])
+    file_path = os.path.join(data_path, str(i))
+    with open(file_path, 'rb') as handle:
+        sentences = pkl.load(handle)
+    s, p = sentences[0], sentences[1]
+    targets = []
+    targets.append(property)
     # p = np.log10(float(id_prop_data[i][index]))
     try:
         graph = graph_converter.convert(s)
