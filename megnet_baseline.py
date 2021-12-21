@@ -34,10 +34,13 @@ prop={'formation_energy':1,'band_gap':2,'fermi_energy':3,'total_magnetization':5
 index=prop[property]
 radius=8
 max_num_nbr = 12
-test_size=0.8
+test_size=0.4
 full_dataset = CIFData(data_path,max_num_nbr,radius)
 datasize=132752
 idx_train, idx_test = train_test_split(range(datasize), test_size=test_size, random_state=42)
+idx_val, idx_test = train_test_split(idx_test, test_size=0.5, random_state=42)
+print("Test size " + str(len(idx_test)))
+print("Train size " + str(len(idx_train)))
 
 # id_prop_file = os.path.join(data_path, 'id_prop.csv')
 # with open(id_prop_file) as f:
